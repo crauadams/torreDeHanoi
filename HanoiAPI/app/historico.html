@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Torre de Hanói - Histórico</title>
+    <meta charset="utf-8" />
+    <link href="assets/css/home.css" rel="stylesheet" />
+    <link href="assets/semantic-ui/semantic.min.css" rel="stylesheet" />
+    <script src="assets/js/jquery-3.2.0.min.js"></script>
+    <script src="assets/js/jquery.signalR-2.2.1.min.js"></script>
+    <script src="/signalr/hubs"></script>
+    <script src="assets/js/historico.js"></script>
+</head>
+<body>
+    <h1 class="title ui dividing header">Torre de Hanói - Histórico</h1>
+    <div class="menu">
+        <ul>
+            <li><a href="/app/">Simulações</a> </li>|
+            <li><a href="/app/historico.html">Histórico</a></li>|
+            <li><a href="/app/api.html">API</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <table class="ui celled table">
+            <thead>
+                <tr>
+                    <th>Jogo</th>
+                    <th>Quant. Discos</th>
+                    <th>Data Inicio</th>
+                    <th>Data Fim</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div>
+            <button class="btn-slack positive ui button" style="display:none;">Slack It!</button>
+        </div>
+    </div>
+    <div class="footer"><span>Leandro de Souza Oliveira | <a href="mailto:leandrodesouza@outlook.com">leandrodesouza@outlook.com</a> | +55 1198238-9496</span></div>
+</body>
+</html>

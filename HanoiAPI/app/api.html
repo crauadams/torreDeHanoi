@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Torre de Hanói</title>
+    <meta charset="utf-8" />
+    <link href="assets/css/home.css" rel="stylesheet" />
+    <link href="assets/semantic-ui/semantic.min.css" rel="stylesheet" />
+    <script src="assets/js/jquery-3.2.0.min.js"></script>
+    <script src="assets/js/api.js"></script>
+</head>
+<body>
+    <h1 class="title ui dividing header">Torre de Hanói - API</h1>
+    <div class="menu">
+        <ul>
+            <li><a href="/app/">Simulações</a> </li>|
+            <li><a href="/app/historico.html">Histórico</a></li>|
+            <li><a href="/app/api.html">API</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <table class="ui celled table">
+            <thead>
+                <tr>
+                    <th>API</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#" data-method="POST" data-url="/api/game/start-game/5">POST api/game/start-game/{quantidadeDeDiscos}</a></td>
+                    <td>Iniciar o jogo com uma determinada quantidade de discos.</td>
+                </tr>
+                <tr>
+                    <td><a href="#" data-method="PUT" data-url="/api/game/mover-disco/game-id/1">PUT api/game/mover-disco/game-id/{gameId}</a></td>
+                    <td>Iniciar a movimentação dos discos.</td>
+                </tr>
+                <tr>
+                    <td><a href="#" data-method="GET" data-url="/api/log/movimento/1">GET api/log/movimento/{gameId}</a></td>
+                    <td>Obter o log das movimentações dos discos de cada jogo.</td>
+                </tr>
+                <tr>
+                    <td><a href="#" data-method="GET" data-url="/api/log/historico">GET api/log/historico</a></td>
+                    <td>Obter o histórico de todas as execuções.</td>
+                </tr>
+            </tbody>
+        </table>
+        <form class="ui form" onsubmit="return false;">
+            <div class="field">
+                <label style="text-align: left;background-color: #4183C4;color: #fff;"><span style="margin-left:10px;">Response</span></label>
+                <textarea style="font-size:12px;height:100%"></textarea>
+            </div>
+        </form>
+    </div>
+    <div class="footer"><span>Leandro de Souza Oliveira | <a href="mailto:leandrodesouza@outlook.com">leandrodesouza@outlook.com</a> | +55 1198238-9496</span></div>
+</body>
+</html>
